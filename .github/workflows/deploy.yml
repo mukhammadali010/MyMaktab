@@ -27,3 +27,4 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+
