@@ -9,7 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky install"
   },
   "prettier": {
     "printWidth": 100,
@@ -52,6 +54,7 @@
     "prettier": "^3.7.4",
     "typescript": "~5.9.2",
     "typescript-eslint": "8.47.0",
-    "vitest": "^4.0.8"
+    "vitest": "^4.0.8",
+    "husky": "^8.0.0"
   }
 }

@@ -10,12 +10,12 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     providePrimeNG({
       theme: {
-          preset: Aura,
-          options: {
-            darkModeSelector: false || 'none'
-        }
-      }
-  }),
-    provideRouter(routes)
-  ]
+        preset: Aura,
+        options: {
+          darkModeSelector: 'none',
+        },
+      },
+    }),
+    provideRouter(routes),
+  ],
 };
