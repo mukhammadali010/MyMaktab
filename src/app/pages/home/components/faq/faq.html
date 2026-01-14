@@ -1,0 +1,27 @@
+<div class="container mt-72 flex items-start justify-between mx-auto">
+    <img src="assets/images/FaqMenu.png" alt="">
+    <div class="w-1/2">
+        <h2 class="flex gap-3"><img src="assets/images/Dialog 2.svg" alt=""> Tez-tez so‘raladigan
+            savollar</h2>
+        <div class="card flex justify-content-center mt-6">
+            <p-accordion [value]="['0']" [multiple]="true">
+                <p-accordion [value]="['0']" [multiple]="true">
+                    @for (faq of faqList; track faq.id) {
+                    <p-accordion-panel [value]="faq.id" [style]="{'--p-accordion-header-background': '#F5F1FD' , 'margin-bottom': '16px'}">
+                        <p-accordion-header>
+                            {{ faq.question }}
+                        </p-accordion-header>
+
+                        <p-accordion-content>
+                            <p class="m-0">
+                                {{ faq.answer }}
+                            </p>
+                        </p-accordion-content>
+                    </p-accordion-panel>
+                    }
+                </p-accordion>
+
+            </p-accordion>
+        </div>
+    </div>
+</div>

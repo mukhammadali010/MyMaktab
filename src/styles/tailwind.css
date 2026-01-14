@@ -1,100 +1,58 @@
 @import 'tailwindcss';
-
+@import url('assets/icons/iconmoon/iconmoon.css');
 @theme {
-  --font-base: 'Nunito', 'sans-serif';
+  --font-base: 'Quicksand', 'sans-serif';
   --font-heading: 'Outfit';
-
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
-
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2rem;
-
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --space-lg: '150px';
+  --color-primary: #F5F1FD;
+  --color-btn-primary: #5C42F2;
+  --color-btn-secondary: #DDD8FB;
+  --color-card-first1: #C7C1EB;
+  --color-card-first2: #DDD8FB;
+  --color-card-second1: #EDBCAD;
+  --color-card-second2: #F5D0C5;
+  --color-card-third1: #FED670;
+  --color-card-third2: #FBE7B4;
 }
 
 @layer base {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-heading);
-    color: #111827;
-    margin-bottom: 0.5rem;
-  }
 
   h1 {
-    font-size: 2.25rem;
+    font-family: var(--font-base);
     font-weight: 700;
+    font-style: Bold;
+    font-size: 50px;
+    line-height: 130%;
+    letter-spacing: -1%;
+    text-align: center;
   }
 
   h2 {
-    font-size: 1.875rem;
-    font-weight: 600;
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: -1%;
+
   }
 
   h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 0%;
 
-  h4 {
-    font-size: 1.25rem;
-    font-weight: 600;
-  }
-
-  h5 {
-    font-size: 1.125rem;
-    font-weight: 500;
-  }
-
-  h6 {
-    font-size: 1rem;
-    font-weight: 500;
   }
 
   p {
     font-family: var(--font-base);
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #374151;
-    margin-bottom: 1rem;
   }
 }
 
+
 @layer utilities {
-  .heading {
-    font-family: var(--font-heading);
-    @apply text-2xl font-semibold text-gray-800 md:text-3xl;
-  }
 
-  .text-muted {
-    color: var(--color-muted);
-  }
-
-  .card {
-    background-color: var(--color-surface);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    padding: var(--space-md);
-  }
-
-  .input {
-    @apply w-full rounded-md border border-gray-300 px-3 py-2;
-    font-family: var(--font-base);
-  }
-
-  .input:focus {
-    @apply ring-2 ring-blue-500 ring-offset-1 outline-none;
-  }
-
-  .section {
-    padding: var(--space-lg);
-    background-color: var(--color-background);
-  }
 }

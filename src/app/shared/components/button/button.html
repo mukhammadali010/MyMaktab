@@ -1,0 +1,20 @@
+<button
+  (click)="buttonClick.emit()"
+  [disabled]="disabled()"
+  [type]="type()"
+  [class]="bgcolor() + ' ' + textcolor() + ' ' + width() + '' + borderColor() + '' + borderRadius()"
+  class="flex items-center  border-secondary-400 cursor-pointer justify-center gap-2 px-4 py-2 text-base  transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed p-2.5"
+>
+  @if (icon() || iconLink()) {
+     <img [src]="iconLink()" alt="">
+    {{ label() }}
+    <i class="icon" [class]="icon()"></i>
+  } @else if (iconLink() && iconPosition() === 'right') {
+    {{ label() }}
+    <img [src]="iconLink()" alt="">
+  } @else if (!label() && !icon()) {
+    <ng-content></ng-content>
+  } @else {
+    {{ label() }}
+  }
+</button>

@@ -1,0 +1,39 @@
+<div class="relative">
+    <img src="assets/images/Rectangle 13.png" alt="" class="absolute w-full -z-[1]">
+    <img src="assets/images/Rectangle 14.png" alt="" class="absolute w-full -z-10 ">
+    <div class=" py-12 px-6 rounded-3xl container mx-auto pt-[160px]">
+        <div class="flex justify-between items-center mb-8">
+            <div class="flex items-center gap-3">
+                <img src="assets/images/Documents.svg" alt="">
+                <h2 class="text-2xl font-bold text-gray-900">Yangiliklar</h2>
+            </div>
+
+            <button pButton class="p-button-text p-button-secondary flex items-center gap-2 font-semibold">
+                Barcha yangiliklar
+                <i class="icon-chevron-thin-right rounded-full text-white p-1 bg-orange-500"></i>
+            </button>
+        </div>
+
+        <div class="card">
+            <p-carousel #carousel [value]="newsList" [numVisible]="4" [numScroll]="4" [showNavigators]="false"
+                [circular]="true" showIndicators="false" [responsiveOptions]="responsiveOptions">
+                <ng-template pTemplate="item" let-item>
+                    <div class="px-[10px]">
+                        <app-news-generic-card [data]="item"></app-news-generic-card>
+                    </div>
+                </ng-template>
+            </p-carousel>
+            <div class="flex justify-center gap-4 mt-6">
+                <button (click)="next($event)"
+                    class="w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center">
+                    <i class="icon-chevron-thin-left"></i>
+                </button>
+
+                <button (click)="prev($event)"
+                    class="w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center">
+                    <i class="icon-chevron-thin-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

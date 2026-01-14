@@ -1,0 +1,48 @@
+<section class="relative">
+    <div class="container mx-auto flex items-center flex-col pb-[450px]">
+        <h1 class="text-center w-1/2 mt-[230px]">Umumta’lim maktablarida
+            o‘quvchilarni boshqarish</h1>
+        <p class="bg-white p-2 rounded-xl mt-7">Umumta’lim maktablariga onlayn qabul qilish va boshqa maktabga o‘tkazish
+            tizimi</p>
+        <div class="flex items-center gap-4 mt-4">
+            <app-button label="Ro‘yhatdan o’tish" [bgcolor]="'bg-btn-primary'" textcolor="text-white"
+                [borderRadius]="'rounded-full'" />
+            <app-button label="Maktabni qidirish" [bgcolor]="'bg-btn-secondary'" [borderRadius]="'rounded-full'" />
+        </div>
+
+        <img src="assets/images/Ellipse 1.png" alt="" class="absolute top-36 left-[-10px]">
+        <img src="assets/images/Ellipse 2.png" alt="" class="absolute top-52 right-[-10px]">
+        <img src="assets/images/Frame.svg" alt="" class="absolute top-98 left-86">
+        <img src="assets/images/Frame-1.svg" alt="" class="absolute top-[52px] left-[590px]">
+        <img src="assets/images/Frame-3.svg" alt="" class="absolute top-[122px] left-[910px]">
+        <img src="assets/images/Frame-2.svg" alt="" class="absolute top-[324px] right-[450px]">
+        <img src="assets/images/Frame-5.svg" alt="" class="absolute top-[167px] right-[150px]">
+        <img src="assets/images/Frame-4.svg" alt="" class="absolute top-[462px] right-[409px]">
+        <img src="assets/images/Frame-6.svg" alt="" class="absolute top-[644px] left-[558px]">
+        <img src="assets/images/Frame-7.svg" alt="" class="absolute top-[696px] right-[702px]">
+        <img src="assets/images/Vector 3.svg" alt="" class="absolute top-[156px] left-[492px]">
+        <img src="assets/images/Vector 2.svg" alt="" class="absolute top-[137px] right-[500px]">
+        <img src="assets/images/Frame 47253.png" alt="" class="absolute top-[420px] left-[150px]">
+        <img src="assets/images/Frame 47252.png" alt="" class="absolute top-[300px] right-[150px]">
+
+    </div>
+
+    <div class="flex items-center gap-10 absolute left-1/2 -translate-x-1/2 mt-[-120px]">
+        <app-generic-card outerClass="w-[365px] h-[225px] bg-card-first1 rounded-[20px]"
+            innerClass="w-[365px] h-[225px] bg-card-first2 rounded-[20px] rotate-[-4deg] origin-bottom-left relative overflow-hidden"
+            circleBg="bg-card-first1" icon="assets/images/Buildings 3.svg" [count]="schoolsCount()"
+            label="Maktablar soni" />
+
+        <app-generic-card outerClass="w-[365px] h-[225px] bg-card-second1 rounded-[20px]"
+            innerClass="w-[375px] h-[225px] bg-card-second2 rounded-[20px] bottom-3 relative overflow-hidden"
+            circleBg="bg-card-second1" icon="assets/images/Academic.svg" [count]="studentCount()"
+            label="O'quvchilar soni" />
+
+        <app-generic-card outerClass="w-[365px] h-[225px] bg-card-third1 rounded-[20px]"
+            innerClass="w-[365px] h-[225px] bg-card-third2 rounded-[20px] rotate-[4deg] origin-bottom-right relative overflow-hidden"
+            circleBg="bg-card-third1" icon="assets/images/Users.svg" [count]="usersCount()"
+            label="Foydalanuvchilar soni" />
+
+    </div>
+
+</section>
