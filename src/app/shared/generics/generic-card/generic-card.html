@@ -1,20 +1,22 @@
 <div [class]="outerClass()">
-    <div [class]="innerClass()">
+  <div [class]="innerClass()">
+    <div
+      class="w-[140px] h-[140px] rounded-full absolute top-[-70px] left-1/2 -translate-x-1/2"
+      [class]="circleBg()"
+    ></div>
 
-        <div class="w-[140px] h-[140px] rounded-full absolute top-[-70px] left-1/2 -translate-x-1/2"
-            [class]="circleBg()"></div>
-
-        <div class="w-[70px] h-[70px] bg-white p-3 rounded-2xl absolute left-1/2 -translate-x-1/2 mt-[30px]">
-            <img [src]="icon()" alt="">
-        </div>
-
-        <h2 class="mt-25 text-center">
-            {{ count() }}
-        </h2>
-
-        <p class="text-center">
-            {{ label() }}
-        </p>
-
+    <div
+      class="w-[70px] h-[70px] bg-white p-3 rounded-2xl absolute left-1/2 -translate-x-1/2 mt-[30px]"
+    >
+      <img [src]="icon()" alt="" />
     </div>
+
+    <h2 class="mt-25 text-center">
+      {{ count() }}
+    </h2>
+
+    <p class="text-center">
+      {{ label() }}
+    </p>
+  </div>
 </div>

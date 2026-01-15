@@ -1,34 +1,33 @@
-<div class="sticky top-0 z-10">
-    <div class="rounded-[20px] bg-white mx-auto py-6 px-[150px] flex items-center justify-between">
-        <div class="flex items-center gap-8">
-            <img src="assets/images/logoSchool.svg" alt="">
-            <img src="assets/images/logo2.svg" alt="">
-        </div>
-        <nav class="flex items-center gap-6 ">
-            @for (item of navItems; track item.target) {
-            <button type="button" (click)="scrollTo(item.target)"
-                class="text-gray-600 hover:text-blue-500 cursor-pointer transition">
-                {{ item.label }}
-            </button>
-            }
-        </nav>
-        <div class="card flex justify-center gap-3">
-            <p-select [options]="languages" [(ngModel)]="selectedLangulage" optionLabel="name" class="w-28">
-                <ng-template #selectedItem let-selectedOption>
-                    <div class="flex items-center gap-2">
-                        <img [src]="selectedOption.flag" alt="" class="w-5 h-5 rounded-full object-cover" />
-                        <span>{{ selectedOption.name }}</span>
-                    </div>
-                </ng-template>
+<div class="rounded-[20px] bg-white mx-auto py-6 px-[150px] flex items-center justify-between">
+    <div class="flex items-center gap-8">
+        <img src="assets/images/logoSchool.svg" alt="" />
+        <img src="assets/images/logo2.svg" alt="" />
+    </div>
+    <nav class="flex items-center gap-6">
+        @for (item of navItems; track item.target) {
+        <button type="button" (click)="scrollTo(item.target)"
+            class="text-gray-600 hover:text-blue-500 cursor-pointer transition">
+            {{ item.label }}
+        </button>
+        }
+    </nav>
+    <div class="card flex justify-center gap-3">
+        <p-select [options]="languages" [(ngModel)]="selectedLangulage" optionLabel="name" class="w-28">
+            <ng-template #selectedItem let-selectedOption>
+                <div class="flex items-center gap-2">
+                    <img [src]="selectedOption.flag" alt="" class="w-5 h-5 rounded-full object-cover" />
+                    <span>{{ selectedOption.name }}</span>
+                </div>
+            </ng-template>
 
-                <ng-template #item let-item>
-                    <div class="flex items-center gap-2">
-                        <img [src]="item.flag" alt="" class="w-5 h-5 rounded-full object-cover" />
-                        <span>{{ item.name }}</span>
-                    </div>
-                </ng-template>
-            </p-select>
-            <app-button [bgcolor]="'bg-primary'" borderColor="'border-primary'" [iconLink]="'assets/images/UserRounded.svg'" [icon]="'icon-chevron-thin-right'" label="Kirish"/>
-        </div>
+            <ng-template #item let-item>
+                <div class="flex items-center gap-2">
+                    <img [src]="item.flag" alt="" class="w-5 h-5 rounded-full object-cover" />
+                    <span>{{ item.name }}</span>
+                </div>
+            </ng-template>
+        </p-select>
+        <app-button [borderRadius]="'rounded-[12px]'" [bgcolor]="'bg-primary'"
+            [iconLink]="'assets/images/UserRounded.svg'" [icon]="'icon-chevron-thin-right'" label="Kirish" />
     </div>
 </div>

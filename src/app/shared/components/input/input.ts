@@ -22,12 +22,12 @@ export class InputDefault implements ControlValueAccessor {
   isDisabled = signal(false);
 
   private onChange: (value: string | number | null) => void = (_value) => {
-  void _value;
-};
+    void _value;
+  };
 
-private onTouched: () => void = () => {
-  void 0;
-};
+  private onTouched: () => void = () => {
+    void 0;
+  };
 
   writeValue(value: string | number | null): void {
     this.value.set(value);

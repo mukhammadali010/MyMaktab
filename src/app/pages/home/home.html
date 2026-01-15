@@ -1,13 +1,23 @@
-<header class="bg-primary p-2.5">
-    <app-navbar/>
-    <app-hero/>
+<header class="p-2.5 bg-primary sticky top-0 z-30">
+    <app-navbar />
 </header>
+<div class="bg-primary" id="hero">
+    <app-hero />
+</div>
 <main>
-    <app-about/>
-    <app-services-component/>
-    <app-news/>
-    <app-faq/>
+    <div id="about">
+        <app-about />
+    </div>
+    <div id="services">
+        <app-services-component />
+    </div>
+    <div id="news">
+        <app-news />
+    </div>
+    <div id="faq">
+        <app-faq />
+    </div>
 </main>
-<footer>
-    <app-footer/>
+<footer id="footer">
+    <app-footer />
 </footer>

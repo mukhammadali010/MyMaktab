@@ -6,9 +6,9 @@ import { Component, input } from '@angular/core';
   templateUrl: './service-card.html',
 })
 export class ServiceCardComponent {
-  icon = input<string>();    
-  iconLink = input<string>();    
-  bgImage = input<string>();    
+  icon = input<string>();
+  iconLink = input<string>();
+  bgImage = input<string>();
   title = input<string>();
   description = input<string>();
 

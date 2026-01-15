@@ -4,19 +4,18 @@
   --font-base: 'Quicksand', 'sans-serif';
   --font-heading: 'Outfit';
   --space-lg: '150px';
-  --color-primary: #F5F1FD;
-  --color-btn-primary: #5C42F2;
-  --color-btn-secondary: #DDD8FB;
-  --color-card-first1: #C7C1EB;
-  --color-card-first2: #DDD8FB;
-  --color-card-second1: #EDBCAD;
-  --color-card-second2: #F5D0C5;
-  --color-card-third1: #FED670;
-  --color-card-third2: #FBE7B4;
+  --color-primary: #f5f1fd;
+  --color-btn-primary: #5c42f2;
+  --color-btn-secondary: #ddd8fb;
+  --color-card-first1: #c7c1eb;
+  --color-card-first2: #ddd8fb;
+  --color-card-second1: #edbcad;
+  --color-card-second2: #f5d0c5;
+  --color-card-third1: #fed670;
+  --color-card-third2: #fbe7b4;
 }
 
 @layer base {
-
   h1 {
     font-family: var(--font-base);
     font-weight: 700;
@@ -34,7 +33,6 @@
     font-size: 36px;
     line-height: 130%;
     letter-spacing: -1%;
-
   }
 
   h3 {
@@ -44,7 +42,6 @@
     font-size: 26px;
     line-height: 120%;
     letter-spacing: 0%;
-
   }
 
   p {
@@ -52,7 +49,5 @@
   }
 }
 
-
 @layer utilities {
-
 }
