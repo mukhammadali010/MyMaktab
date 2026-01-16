@@ -1,0 +1,39 @@
+<div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
+  <div class="flex justify-between mb-3">
+    <span
+      class="text-xs px-3 py-1 rounded-full"
+      [class]="{
+        'bg-blue-100 text-blue-600': data()?.status === 'created',
+        'bg-green-100 text-green-600': data()?.status === 'accepted',
+        'bg-red-100 text-red-600': data()?.status === 'rejected',
+      }"
+    >
+      {{ data()?.statusLabel }}
+    </span>
+
+    <span class="text-xs text-gray-400"> O‘quv yili: {{ data()?.year }} </span>
+  </div>
+
+  <h3 class="font-semibold mb-2">{{ data()?.student }}</h3>
+
+  <div class="text-sm text-gray-600 space-y-1">
+    <p><b>Ro‘yxat raqami:</b> {{ data()?.number }}</p>
+    <p><b>Kategoriya:</b> {{ data()?.category }}</p>
+    <p><b>Yaratildi:</b> {{ data()?.created }}</p>
+  </div>
+
+  <div class="mt-4 flex justify-between items-center">
+    <button class="bg-orange-500 text-white text-sm px-4 py-2 rounded-lg flex items-center gap-2">
+      <i class="icon-paper-plane"></i> Yuborish
+    </button>
+
+    <div class="flex gap-2">
+      <button class="w-9 h-9 rounded-lg border flex items-center justify-center">
+        <i class="icon-pencil"></i>
+      </button>
+      <button class="w-9 h-9 rounded-lg border text-red-500 flex items-center justify-center">
+        <i class="icon-trash"></i>
+      </button>
+    </div>
+  </div>
+</div>

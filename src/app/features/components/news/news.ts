@@ -1,9 +1,9 @@
 import { Component, OnInit, viewChild } from '@angular/core';
-import { NewsItem } from '../../../../shared/generics/news-generic-card/news-generic-card.model';
-import { NewsGenericComponent } from '../../../../shared/generics/news-generic-card/news-generic-card';
 import { Carousel, CarouselModule, CarouselResponsiveOptions } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
+import { NewsGenericComponent } from '../../../shared/generics/news-generic-card/news-generic-card';
+import { NewsItem } from '../../../shared/generics/news-generic-card/news-generic-card.model';
 
 @Component({
   selector: 'app-news',

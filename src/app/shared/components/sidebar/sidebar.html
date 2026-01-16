@@ -1,0 +1,20 @@
+<div>
+  <div class="card flex justify-center items-center gap-2">
+    <i class="icon-home text-xl flex-shrink-0"></i>
+    <p-breadcrumb [model]="breadCrumb" [home]="home" class="flex-1"></p-breadcrumb>
+  </div>
+
+  <h2 class="mt-3 mb-6">Shaxsiy kabinet</h2>
+  <aside class="w-[318px] bg-white rounded-2xl p-4 flex flex-col justify-between">
+    <p-panelMenu [model]="items" class="sidebar-menu"></p-panelMenu>
+
+    <button
+      type="button"
+      (click)="logout()"
+      class="flex items-center gap-3 px-4 py-3 mt-4 text-red-500 rounded-xl hover:bg-red-50"
+    >
+      <i class="icon icon-logout"></i>
+      <span>Chiqish</span>
+    </button>
+  </aside>
+</div>

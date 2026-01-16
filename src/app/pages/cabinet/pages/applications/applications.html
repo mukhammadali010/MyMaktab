@@ -1,0 +1,20 @@
+<div class="">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-2xl font-bold">Maktabdan-maktabga o‘tkazish arizalari</h1>
+
+    <app-button
+      label="Ariza yaratish"
+      icon="icon-add-solid"
+      [iconPosition]="'left'"
+      [bgcolor]="'bg-btn-primary'"
+      [textcolor]="'text-white'"
+      [borderRadius]="'rounded-[12px]'"
+    />
+  </div>
+
+  <div class="grid grid-cols-3 gap-4">
+    @for (item of applications; track item.id) {
+      <app-cabinet-card [data]="item" />
+    }
+  </div>
+</div>

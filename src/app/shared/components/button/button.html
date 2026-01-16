@@ -19,7 +19,8 @@
             : '')
       "
     ></i>
-  } @else if (iconLink() && iconPosition() === 'right') {
+  } @else if (icon() && iconPosition() === 'left') {
+    <i [class]="icon()"></i>
     {{ label() }}
   } @else if (!label() && !icon()) {
     <ng-content></ng-content>
