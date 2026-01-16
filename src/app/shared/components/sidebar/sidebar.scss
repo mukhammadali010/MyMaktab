@@ -1,0 +1,7 @@
+.p-menuitem-link-active {
+  background: #635bff !important;
+  color: white !important;
+}
+::ng-deep .p-breadcrumb {
+  background-color: var(--color-primary);
+}

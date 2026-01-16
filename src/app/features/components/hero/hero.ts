@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
-import { ButtonComponent } from '../../../../shared/components/button/button';
-import { GenericCard } from '../../../../shared/generics/generic-card/generic-card';
+import { ButtonComponent } from '../../../shared/components/button/button';
+import { GenericCard } from '../../../shared/generics/generic-card/generic-card';
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.html',

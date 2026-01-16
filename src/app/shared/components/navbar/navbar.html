@@ -35,7 +35,8 @@
       [bgcolor]="'bg-primary'"
       [iconLink]="'assets/images/UserRounded.svg'"
       [icon]="'icon-chevron-thin-right'"
-      label="Kirish"
+      [label]="authService.isLoggedIn() ? 'Nosirov.M' : 'Kirish'"
+      (buttonClick)="authService.isLoggedIn() ? logout() : loginToCabinet()"
     />
   </div>
 </div>

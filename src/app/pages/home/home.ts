@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Navbar } from '../../shared/components/navbar/navbar';
-import { Hero } from './components/hero/hero';
-import { About } from './components/about/about';
-import { ServicesComponent } from './components/servicesComponent/servicesComponent';
-import { NewsComponent } from './components/news/news';
-import { Faq } from './components/faq/faq';
 import { Footer } from '../../shared/components/footer/footer';
+import { Hero } from '../../features/components/hero/hero';
+import { About } from '../../features/components/about/about';
+import { ServicesComponent } from '../../features/components/servicesComponent/servicesComponent';
+import { NewsComponent } from '../../features/components/news/news';
+import { Faq } from '../../features/components/faq/faq';
 
 @Component({
   selector: 'app-home',
